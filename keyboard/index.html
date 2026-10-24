@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RabbitsKey – help and contact</title>
+<link rel="icon" href="icon.png">
+<style>
+:root { --bg:#F7F3EA; --card:#FFFFFF; --ink:#2B2B26; --muted:#7B7A70; --line:#E8E1D2; --sage:#3F6B45; --terra:#D9774A; }
+@media (prefers-color-scheme: dark) { :root { --bg:#131D18; --card:#1B2721; --ink:#E9EEE6; --muted:#9AA79C; --line:#2C3B33; --sage:#8FC08A; --terra:#F2B25C; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display:flex; align-items:center; gap:14px; margin-bottom: 8px; }
+header img { width:56px; height:56px; border-radius:13px; }
+header a { color:var(--ink); text-decoration:none; font: 700 1.4rem Georgia, "New York", serif; }
+nav { display:flex; flex-wrap:wrap; gap:8px 18px; margin: 0 0 28px; font-size:.95rem; }
+nav a { color:var(--sage); font-weight:600; text-decoration:none; }
+nav a[aria-current] { color:var(--ink); }
+h1 { font: 700 2rem/1.2 Georgia, "New York", serif; margin: 8px 0 16px; }
+h2 { font: 700 1.25rem Georgia, "New York", serif; margin: 30px 0 8px; }
+section.card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding: 4px 22px 18px; }
+ul { padding-left: 1.2em; } li { margin: 4px 0; }
+a { color: var(--sage); }
+footer { margin-top: 36px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="index.html">RabbitsKey</a></header>
+<nav><a href="index.html" aria-current="page">RabbitsKey</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+<section class="card">
+<h1>RabbitsKey – help and contact</h1>
+<p>RabbitsKey is a normal iPhone and iPad keyboard with a little bunny that hops onto every key you press.
+It needs no Full Access, so nothing you type ever leaves your device.</p>
+<h2>Contact</h2>
+<p>Questions, problems or requests about your data: email <span class="em" data-c="109,111,99,46,108,105,97,109,101,108,103,111,111,103,64,115,114,101,104,103,105,104,46,109">m.highers [at] googlemail [dot] com</span>.</p>
+<h2>Common questions</h2>
+<ul>
+<li><strong>How do I turn it on?</strong> Open RabbitsKey and tap Open Settings › Keyboards › turn on Rabbits. Then in
+any app press and hold 🌐 under the keyboard and choose Rabbits.</li>
+<li><strong>Where does the bunny sit?</strong> Choose Above, On key or On letter in the app, or tap 🐾 above the keys.</li>
+<li><strong>Why is there no Full Access?</strong> It is not needed – suggestions and autocorrect come from your
+device's own dictionary.</li>
+</ul>
+<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+
+</section>
+<footer>RabbitsKey – a keyboard with a hopping bunny.</footer>
+</main>
+<script>
+document.querySelectorAll('.em').forEach(function (el) {
+  var a = el.dataset.c.split(',').reverse().map(function (n) { return String.fromCharCode(+n); }).join('');
+  var link = document.createElement('a'); link.href = 'mail' + 'to:' + a; link.textContent = a; el.replaceWith(link);
+});
+</script>
+</body>
+</html>
